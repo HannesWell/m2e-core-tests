@@ -24,16 +24,9 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-        submodules: false
+        submodules: true
         repository: 'eclipse-m2e/m2e-core'
         ref: 'main'
-    - name: Checkout tests
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-        submodules: false
-        repository: 'tesla/m2e-core-tests'
-        path: 'm2e-core-tests'
     - uses: actions/setup-java@v4
       with:
         java-version: '21'
@@ -41,7 +34,7 @@ jobs:
     - name: Set up Maven
       uses: stCarolas/setup-maven@v5
       with:
-        maven-version: 3.9.9
+        maven-version: 3.9.11
     - name: Cache local Maven repository
       uses: actions/cache@v4
       with:
@@ -71,4 +64,3 @@ jobs:
       with:
         name: Event File
         path: ${{ github.event_path }}
-

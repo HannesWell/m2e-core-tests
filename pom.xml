@@ -14,7 +14,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho.scmUrl>scm:git:https://github.com/tesla/m2e-core-tests.git</tycho.scmUrl>
+		<tycho.scmUrl>scm:git:https://github.com/eclipse-m2e/m2e-core-tests.git</tycho.scmUrl>
 		<tycho.test.platformArgs></tycho.test.platformArgs>
 	</properties>
 	<modules>

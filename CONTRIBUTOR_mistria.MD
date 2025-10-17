@@ -1,0 +1,391 @@
+# Contributor: Mickael Istria
+
+**Email:** mistria@redhat.com
+
+## Files Initially Contributed
+
+This document lists all files initially contributed by Mickael Istria to the m2e-core-tests repository.
+
+### org.eclipse.m2e.editor.xml.tests/
+
+**Total files in this directory: 330**
+
+<details>
+<summary>Click to expand file list</summary>
+
+- `org.eclipse.m2e.editor.xml.tests/.gitignore`
+- `org.eclipse.m2e.editor.xml.tests/META-INF/MANIFEST.MF`
+- `org.eclipse.m2e.editor.xml.tests/about.html`
+- `org.eclipse.m2e.editor.xml.tests/build.properties`
+- `org.eclipse.m2e.editor.xml.tests/plugin.xml`
+- `org.eclipse.m2e.editor.xml.tests/plugin_customization.ini`
+- `org.eclipse.m2e.editor.xml.tests/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/355882/test1/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/355882/test2/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/442560_plugin_content_assist/project/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/467590_emptyPom/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/467590_emptyPom/test1/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/467590_emptyPom/test1/result_pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/467590_emptyPom/test2/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/467590_emptyPom/test2/result_pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/module1/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/module1/submodule1/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/module1/submodule2/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/module2/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/module3/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/src/main/filters/filters1.properties`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/src/main/filters/filters2.properties`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/src/main/filters/filtersfolder/.gitkeep`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/src/test/.gitkeep`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/src/unusedfile.txt`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent1/target/classes/.gitkeep`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent2/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/489755_file_content_assist/parent3/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/553839/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/Hyperlink/hyperlinkChild/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/Hyperlink/hyperlinkParent/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2541/child2541/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2541/parent2541/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2552/child2552withDuplicateGroup/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2552/child2552withDuplicateGroup/pom_good.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2552/child2552withDuplicateGroupAndVersion/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2552/child2552withDuplicateGroupAndVersion/pom_good.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2552/child2552withDuplicateVersion/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2552/child2552withDuplicateVersion/pom_good.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2552/parent2552/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2559/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2559/pom_good.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2559/withProfileActivated/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2559/withProfileActivated/pom_good.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2576/child2576/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2576/parent2576/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2601/child1/child3/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2601/child1/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2601/parent2601/child2/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MNGECLIPSE-2601/parent2601/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MissingSchemaMarker/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/MissingSchemaMarker/pom_good.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/extractProject/parent/Anested1/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/extractProject/parent/Xnested3/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/extractProject/parent/Znested2/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/extractProject/parent/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/projects/insertat_insideemptyelement/pom.xml`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/ant/ant-antlr/1.6.5/ant-antlr-1.6.5.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/ant/ant-antlr/1.6.5/ant-antlr-1.6.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/ant/ant-apache-oro/1.6.5/ant-apache-oro-1.6.5.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/ant/ant-apache-oro/1.6.5/ant-apache-oro-1.6.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/ant/ant/1.6.5/ant-1.6.5.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/ant/ant/1.6.5/ant-1.6.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/classworlds/classworlds/1.1/classworlds-1.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/classworlds/classworlds/1.1/classworlds-1.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/commons-cli/commons-cli/1.0/commons-cli-1.0.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/commons-cli/commons-cli/1.0/commons-cli-1.0.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/commons-lang/commons-lang/2.1/commons-lang-2.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/commons-lang/commons-lang/2.1/commons-lang-2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/junit/junit/3.8.1/junit-3.8.1-sources.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/junit/junit/3.8.1/junit-3.8.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/junit/junit/3.8.1/junit-3.8.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/junit/junit/3.8.2/junit-3.8.2-sources.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/junit/junit/3.8.2/junit-3.8.2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/junit/junit/3.8.2/junit-3.8.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/apache/10/apache-10.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/apache/11/apache-11.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/apache/13/apache-13.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/apache/3/apache-3.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/apache/4/apache-4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/apache/5/apache-5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/apache/6/apache-6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/apache/7/apache-7.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/11/maven-parent-11.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/15/maven-parent-15.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/16/maven-parent-16.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/21/maven-parent-21.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/22/maven-parent-22.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/23/maven-parent-23.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/5/maven-parent-5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/8/maven-parent-8.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-parent/9/maven-parent-9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven/2.0.6/maven-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven/2.0.9/maven-2.0.9.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/maven/2.2.1/maven-2.2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-ear-plugin/2.8/maven-ear-plugin-2.8.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-ear-plugin/2.8/maven-ear-plugin-2.8.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-plugins/16/maven-plugins-16.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-plugins/18/maven-plugins-18.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-plugins/23/maven-plugins-23.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/plugins/maven-surefire-plugin/2.12.4/maven-surefire-plugin-2.12.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-shared-components/10/maven-shared-components-10.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/maven/surefire/surefire/2.12.4/surefire-2.12.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/apache/xbean/xbean/3.4/xbean-3.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-archiver/2.1.2/plexus-archiver-2.1.2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-archiver/2.1.2/plexus-archiver-2.1.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler/1.8.1/plexus-compiler-1.8.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compilers/1.8.1/plexus-compilers-1.8.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/3.0.2/plexus-utils-3.0.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/1.0.12/plexus-1.0.12.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/eclipse/dummy/emptymojo/1.0.0/emptymojo-1.0.0.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/forge/forge-parent/10/forge-parent-10.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/forge/forge-parent/3/forge-parent-3.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/forge/forge-parent/4/forge-parent-4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/forge/forge-parent/5/forge-parent-5.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/spice/spice-parent/10/spice-parent-10.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/spice/spice-parent/12/spice-parent-12.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/spice/spice-parent/16/spice-parent-16.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/org/sonatype/spice/spice-parent/17/spice-parent-17.pom`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/test/plugin/1.0/plugin-1.0.jar`
+- `org.eclipse.m2e.editor.xml.tests/remoterepo/test/plugin/1.0/plugin-1.0.pom`
+- `org.eclipse.m2e.editor.xml.tests/settings.xml`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/AbstractCompletionTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/AbstractPOMEditorTestCase.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/ExtractProject2Test.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/ExtractProjectTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/FileCompletionTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/HoverDependencyManagedTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/HoverTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/HyperlinkTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/ManagedArtifactMarkerTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/MissingSchemaMarkerTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/PluginConfigCompletionTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/PomContentAssistProcessorTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/PomEditsTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/PomTemplateContextTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/PropertyCompletionTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/RelativePath1Test.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/RelativePath2Test.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/RelativePath3Test.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/SearchEngineMock.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/TestMojoParameterMetadata.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/WarnIfGroupSameThanParentTest.java`
+- `org.eclipse.m2e.editor.xml.tests/src/org/eclipse/m2e/editor/xml/XmlEditorHelpers.java`
+
+</details>
+
+## All Commits
+
+Total commits: 28
+
+- `9feae7ba` - CI use newer Maven
+- `9c7fb8c6` - Ensure downloadSources=false for BuildPathManager
+- `58bae7d0` - Adapt to newer signatures in LocalProjectScanner
+- `616b2a52` - Fix extra index test
+- `54236354` - Remove more index tests
+- `f4b372ef` - Do not fail if editor is dirty after refactoring
+- `a7ebbc29` - Revert "Revert "Remove SSE XML Editor related tests""
+- `7ba1604a` - Fix test relying on common-beanutils
+- `e0a529fd` - Revert "Remove SSE XML Editor related tests"
+- `107e31a1` - Remove SSE XML Editor related tests
+- `3e20ccd5` - Revert "check for better messages in case of duplicate mappings"
+- `1b229624` - Fix compilation error while removing indexer
+- `42c810c1` - Issue #509 - Remove anything based on indexer
+- `e69bcba5` - Improve tests so they don't rely on severity for lifecycle mappings
+- `a2f8b9c4` - JUnit 4.13.1 not in index -> use 3.8.1
+- `7a254858` - Fix version
+- `92640555` - Update to internal classes moved (continued)
+- `57caefbf` - Update to internal classes moved
+- `61fdf690` - Prepare for https://git.eclipse.org/r/#/c/160073/
+- `985aa80e` - Close editor synchronously in ExcludeArtifactRefactoringTest
+- `fc0a58f3` - To 1.16
+- `2d483327` - Set tycho.scmUrl
+- `c215c138` - Maven 3.6.3
+- `8c6b4f7f` - Bug 515668 - Update tests for markers addition
+- `bf5e7338` - Use m2e parent
+- `a479dc32` - Bug 515668 - Update tests for markers addition
+- `a6491c6b` - Avoid referencing org.eclipse.equinox.ds
+- `1cdc2296` - Bug 542465 - generate jacoco.exec coverage reports (#65)
+
+
+---
+
+## License Declaration
+
+Please check the box below to indicate your agreement:
+
+- [ ] I hereby declare that I contribute my source code mentioned in this file under the terms of the EPL 2.0 license.
+
+**EPL 2.0 License:** https://www.eclipse.org/legal/epl-2.0/

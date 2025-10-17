@@ -48,7 +48,10 @@ The tests require:
 
 ## Contributing
 
-Contributions are welcome! This project follows the Eclipse Development Process and contribution guidelines. Please refer to the main [m2e-core Contributing Guide](https://github.com/eclipse-m2e/m2e-core/blob/master/CONTRIBUTING.md) for detailed information on:
+**Note**: This repository is primarily a legacy test suite. For new contributions and test development, we strongly encourage contributing directly to the main [m2e-core](https://github.com/eclipse-m2e/m2e-core) repository instead. This test repository is maintained mainly for compatibility and may only be adjusted to work with new features of M2E.
+
+If you need to make changes to this repository, please refer to the main [m2e-core Contributing Guide](https://github.com/eclipse-m2e/m2e-core/blob/master/CONTRIBUTING.md) for information on:
+- Eclipse Development Process and contribution guidelines
 - Setting up your development environment
 - Code style and conventions
 - Submitting pull requests
@@ -56,7 +59,11 @@ Contributions are welcome! This project follows the Eclipse Development Process 
 
 ## License
 
-This project is licensed under the Eclipse Public License 2.0 (EPL-2.0). See the [Eclipse Foundation License Information](https://www.eclipse.org/legal/epl-2.0/) for details.
+**Important**: The license status of the files in this repository is currently unclear. Due to the historical nature of this forked repository, we have not been able to obtain clearance from all historic authors, and some files (including potential binaries) have not been fully vetted against the Eclipse IP process.
+
+While we believe the content is covered under one or more open source licenses, we cannot definitively state that all files are licensed under the Eclipse Public License 2.0 (EPL-2.0). Users and contributors should be aware of this uncertainty when working with this repository.
+
+For more information about Eclipse licenses, see the [Eclipse Foundation License Information](https://www.eclipse.org/legal/epl-2.0/).
 
 ## Links
 

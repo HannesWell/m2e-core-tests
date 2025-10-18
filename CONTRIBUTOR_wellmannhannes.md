@@ -99,6 +99,6 @@ Total commits: 49
 
 Please check the box below to indicate your agreement:
 
-- [ ] I hereby declare that I contribute my source code mentioned in this file under the terms of the EPL 2.0 license.
+- [x] I hereby declare that I contribute my source code mentioned in this file under the terms of the EPL 2.0 license.
 
 **EPL 2.0 License:** https://www.eclipse.org/legal/epl-2.0/
